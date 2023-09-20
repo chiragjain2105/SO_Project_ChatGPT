@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        StackOver Flow Question Tagger
+    </title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            color: aliceblue;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>StackOver Flow Question Tagger</h1>
+    <div>
+        <form method="post" action="/predict">
+            <div><textarea rows="5" cols="60" name="title-content" placeholder="Type or paste your title here">{{title}}</textarea></div>
+            <div><textarea rows="12" cols="60" name="body-content" placeholder="Type or paste your body here">{{body}}</textarea></div>
+            <div>
+                <button>
+                    Submit
+                </button>
+                <a href="/">Reset</a>
+            </div>
+        </form>
+        <h2>{{ pred }}</h2>
+        <img src="C:\Users\chirag.jain\Desktop\SO Project\templates\img.jpg" alt="ChatGPT Output : ">
+        <h2>{{ gpt }}</h2>
+    </div>
+</body>
+
+</html>
